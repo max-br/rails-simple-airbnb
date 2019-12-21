@@ -1,0 +1,82 @@
+.container-list {
+  margin: 20px 150px;
+}
+
+.card-all {
+  border: none;
+  margin-top: 30px;
+}
+
+.card {
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 350px;
+  height: 180px;
+  background-position: center;
+  object-fit: cover;
+}
+
+.flat-capa {
+  display: flex;
+  margin-right: 25px;
+}
+
+#capa {
+  margin-left: 5px;
+}
+
+.price {
+  display: flex;
+}
+
+#price_per_night {
+  margin-right: 5px;
+}
+
+.flat-detail {
+  display: flex;
+  padding: 0 5px 20px 20px;
+}
+
+.flat-detail p {
+  margin: 0;
+}
+
+.card-action {
+  display: flex;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+#more-info {
+  margin-right: 20px;
+}
+
+#edit a {
+  margin-right: 20px;
+  // text-decoration: none;
+  color: orange;
+}
+
+#remove a {
+  color: red;
+}
+
+.card h3 {
+  font-size: 24px;
+  padding: 20px 20px 2px 20px;
+}
+
+.card h4{
+  font-size: 16px;
+  opacity: .8;
+  padding: 0 20px;
+  margin-bottom: 15px;
+
+}
+
+.flat-info {
+  background-color: #F8F9FA;
+}

@@ -1,0 +1,51 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <%= link_to flats_path, class: "navbar-brand" do %>
+    <h1 class="logo">Simple Airbnb</h1>
+  <% end %>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <%= link_to "#", class: "navbar-brand" do %>
+          <button type="button" class="btn btn-outline-success">Search</button>
+        <% end %>
+      </li>
+      <li class="nav-item">
+        <%= link_to flats_path, class: "navbar-brand" do %>
+          <button type="button" class="btn btn-outline-primary">Add flat</button>
+        <% end %>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="container-list">
+  <h1>All our flats(<%= @flats.count %>)</h1>
+  <div class="card-all">
+    <div class="row">
+      <% @flats.each do |flat| %>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="card">
+            <div class="flat-info">
+              <img src=<%= flat.picture_url %>>
+              <h3><%= flat.name %></h3>
+              <h4><%= flat.address %></h4>
+              <div class="flat-detail">
+                <div class="flat-capa">
+                  <p id="user">👤</p>
+                  <p id="capa"><%= flat.number_of_guests %></p>
+                </div>
+                <div class="price">
+                  <p id="price_per_night"><%= flat.price_per_night %></p>
+                  <p id="euro">€</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-action">
+              <p id="more-info"><%= link_to "More info", flat_path(@flats) %></p>
+              <p id="edit"><%= link_to "Edit", edit_flat_path(@flats) %></p>
+              <p id="remove"><%= link_to "Remove", flat_path(@flats), method: :delete, data: { confirm: 'Are you sure?'} %></p>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
