@@ -25,7 +25,7 @@ class FlatsController < ApplicationController
   end
 
   def update
-    @article.update(flat_params)
+    @flat.update(flat_params)
     redirect_to flat_path(@flat)
   end
 
