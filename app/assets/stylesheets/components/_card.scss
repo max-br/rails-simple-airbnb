@@ -1,21 +1,19 @@
-.container-list {
-  margin: 20px 150px;
-}
-
-.card-all {
-  border: none;
-  margin-top: 30px;
+.container {
+  margin: 0 auto;
 }
 
 .card {
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+  width: 350px;
+  height: 380px;
+  margin: 15px 10px 15px 10px;
 }
 
 .card img {
-  width: 350px;
-  height: 180px;
   background-position: center;
   object-fit: cover;
+  width: 350px;
+  height: 150px;
 }
 
 .flat-capa {
@@ -46,8 +44,7 @@
 
 .card-action {
   display: flex;
-  margin-bottom: 30px;
-  padding: 20px;
+  padding: 20px 0 0 20px;
 }
 
 #more-info {
