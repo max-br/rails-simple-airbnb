@@ -38,7 +38,7 @@
           </div>
         </div>
         <div class="card-action">
-          <p id="more-info"><%= link_to "More info", flat_path(@flats) %></p>
+          <p id="more-info"><%= link_to "More info", flat_path(flat)%></p>
           <p id="edit"><%= link_to "Edit", edit_flat_path(@flats) %></p>
           <p id="remove"><%= link_to "Remove", flat_path(@flats), method: :delete, data: { confirm: 'Are you sure?'} %></p>
         </div>

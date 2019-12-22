@@ -1,0 +1,102 @@
+.banner img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  position: relative;
+}
+
+// .container{
+//   margin: 0 auto;
+// }
+
+.block {
+  position: absolute;
+  margin-top: -60px;
+  display: flex;
+}
+
+.flat-title {
+  background-color: #F8F9FA;
+  padding: 20px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.flat-title h1 {
+  font-size: 40px;
+}
+
+.flat-title h3 {
+  font-size: 20px;
+  opacity: .6;
+}
+
+.flat-descritpion {
+  background-color: #F8F9FA;
+  padding: 20px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  border-radius: 3px;
+  margin-bottom: 60px;
+  height: 300px;
+}
+
+.flat-infos {
+  width: 700px;
+  margin-right: 30px;
+}
+
+.flat-booking {
+  width: 350px;
+}
+
+.book {
+  background-color: #F8F9FA;
+  padding: 20px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.flat-details-show {
+  background-color: #F8F9FA;
+  padding: 20px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  border-radius: 3px;
+  margin-bottom: 20px;
+  line-height: 0;
+}
+
+.flat-detail-show {
+  display: flex;
+  margin-top: 20px;
+}
+
+.flat-capa-show {
+  display: flex;
+  padding-right: 20px;
+}
+
+.price-show {
+  display: flex;
+}
+
+.share {
+  background-color: #F8F9FA;
+  padding: 20px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  border-radius: 3px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.share p {
+  font-weight: bold;
+}
+
+#price_per_night-show {
+  margin-right: 6px;
+}
+
+

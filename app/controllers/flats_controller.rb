@@ -1,5 +1,5 @@
 class FlatsController < ApplicationController
-  before_action :set_flat, only: [:show, :edit, :update, :destroy]
+  before_action :set_flats, only: [:show, :edit, :update, :destroy]
 
   def index
     @flats = Flat.all
@@ -36,11 +36,11 @@ class FlatsController < ApplicationController
 
   private
 
-  def flat_params
-    params.require(:flat).permit(:name, :address, :description, :price_per_night, :number_of_guests)
+  def set_flats
+    @flat = Flat.find(params[:id])
   end
 
-  def set_flat
-    @flat = Flat.find(params[:id])
+  def flat_params
+    params.require(:flat).permit(:name, :address, :description, :price_per_night, :number_of_guests)
   end
 end

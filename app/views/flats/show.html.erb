@@ -1,0 +1,55 @@
+<div class="banner">
+  <img src=<%= @flat.picture_url %>>
+</div>
+<div class="container">
+  <div class="block">
+    <div class="flat-infos">
+      <div class="flat-title">
+        <h1><%= @flat.name %></h1>
+        <h3><%= @flat.address %></h3>
+      </div>
+      <div class="flat-descritpion">
+        <h3>A bit more about this flat...</h3>
+        <p><%= @flat.description %></p>
+      </div>
+    </div>
+    <div class="flat-booking">
+      <div class="book">
+        <h4>Book this place!</h4>
+        <form action="">
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">From:</span>
+            <input type="text" class="form-control" placeholder="22/12/2019" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group mt-2">
+            <span class="input-group-addon" id="basic-addon1">To:</span>
+            <input type="text" class="form-control" placeholder="31/12/2019" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          <input type="submit" value="Book" class="btn btn-success mt-2" style="width: 100%">
+        </form>
+      </div>
+      <div class="flat-details-show">
+        <h1>Details</h1>
+        <div class="flat-detail-show">
+          <div class="flat-capa-show">
+            <p id="user-show">👤</p>
+            <p id="capa-show"><%= @flat.number_of_guests %></p>
+          </div>
+          <div class="price-show">
+            <p id="price_per_night-show"><%= @flat.price_per_night %></p>
+            <p id="euro-show">€</p>
+          </div>
+        </div>
+      </div>
+      <div class="share">
+        <p>Share</p>
+        <ul class="list-inline">
+          <li class="list-inline-item">fb</li>
+          <li class="list-inline-item">twitter</li>
+          <li class="list-inline-item">pinterest</li>
+          <li class="list-inline-item">mail</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
