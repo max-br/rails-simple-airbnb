@@ -14,7 +14,16 @@
   </div>
 </div>
 <div class="container">
-  <h1>All our flats(<%= Flat.count %>)</h1>
+  <h1>All our flats</h1>
+  <div class="row">
+    <div class="col">
+      <% if @query %>
+        <p>You searched for <strong><%= @query %></strong>. We found <%= @flats.count %> flats out of our <%= Flat.count %> on our website.</p>
+      <% else %>
+        <p>All <%= Flat.count %> flats.</p>
+      <% end %>
+    </div>
+  </div>
   <div class="row justify-content-center">
     <% @flats.each do |flat| %>
       <div class="card">
